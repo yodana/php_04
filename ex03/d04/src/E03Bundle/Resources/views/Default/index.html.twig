@@ -1,0 +1,16 @@
+<table>
+    <tr>
+        <th style="width:80px; height:40px">BLACK</th>
+        <th style="width:80px; height:40px">RED</th>
+        <th style="width:80px; height:40px">BLUE</th>
+        <th style="width:80px; height:40px">GREEN</th>
+    </tr>
+    {% for t in tab_color %}
+    <tr>
+        <td style="background-color:rgb({{t.black.red}},{{t.black.green}},{{t.black.blue}}); width:80px; height:40px"></td>
+        <td style="background-color:rgb({{t.red.red}},{{t.red.green}},{{t.red.blue}}); width:80px; height:40px"></td>
+        <td style="background-color:rgb({{t.blue.red}},{{t.blue.green}},{{t.blue.blue}}); width:80px; height:40px"></td>
+        <td style="background-color:rgb({{t.green.red}},{{t.green.green}},{{t.green.blue}}); width:80px; height:40px"></td>
+    </tr>
+    {% endfor %}
+</table>
